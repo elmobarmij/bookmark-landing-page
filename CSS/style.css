@@ -37,7 +37,7 @@
   border-top-left-radius: 0% 50%;
   border-bottom-left-radius: 50% 100%;
 }
-.links li {
+.links li a {
   font-size: 1.3rem;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
@@ -46,7 +46,7 @@
   cursor: pointer;
   transition: var(--main-transition);
 }
-li:hover {
+li:hover a {
   color: var(--SoftRed);
 }
 .hero-img {
