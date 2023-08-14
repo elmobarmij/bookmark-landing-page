@@ -1,0 +1,257 @@
+@media (max-width: 68em) {
+  html {
+    font-size: 56.25%;
+  }
+  .section-hero::before {
+    width: 60rem;
+    right: -50%;
+    height: 40rem;
+  }
+  .message {
+    display: none;
+  }
+}
+
+@media (max-width: 57em) {
+  .section-hero {
+    grid-template-columns: 1fr;
+  }
+  .section-hero img {
+    grid-row: 1;
+    margin: auto;
+  }
+  .section-hero::before {
+    top: 15%;
+    right: -10%;
+  }
+  .hero-info {
+    text-align: center;
+  }
+  .hero-buttons {
+    justify-content: center;
+  }
+  .hero-title {
+    font-size: 4rem;
+    margin: 6.4rem 0 3.2rem;
+  }
+  .hero-desc {
+    font-size: 1.8rem;
+    max-width: 70rem;
+    margin: 4rem auto;
+  }
+  .more-info {
+    font-size: 1.6rem;
+    padding: 2rem 4rem;
+  }
+  .section-intro p {
+    font-size: 1.8rem;
+  }
+  .features-titles {
+    margin-bottom: 10rem;
+  }
+  .features-titles ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .features-title {
+    padding: 3rem 0;
+    font-size: 2rem;
+  }
+  .grid--2-cols {
+    grid-template-columns: 1fr;
+  }
+  .bookmarking::before,
+  .searching::before,
+  .sharing::before {
+    top: 15%;
+  }
+  .feature-info {
+    margin-top: 15rem;
+    padding-left: 0;
+    text-align: center;
+  }
+  .section-features figure {
+    place-items: center;
+  }
+  .section-download,
+  .FAQ {
+    margin-top: 20rem !important;
+  }
+  .grid--3-cols {
+    grid-template-columns: 40rem;
+  }
+  .card {
+    padding: 6.4rem 0 4.8rem;
+  }
+  .card .card-desc {
+    font-size: 2rem;
+  }
+  .card .sec-card-desc {
+    font-size: 1.6rem;
+  }
+  .accordion summary {
+    font-size: 2rem;
+  }
+  .contact form {
+    flex-direction: column;
+  }
+  .more-info.submit,
+  .email {
+    width: 80% !important;
+  }
+  .header .links {
+    display: none;
+  }
+  .menu-icons {
+    display: block;
+    cursor: pointer;
+  }
+  .menu-icons {
+    display: block;
+    cursor: pointer;
+    z-index: 99999;
+  }
+  .header.open .menu-icons .close {
+    display: block;
+  }
+  .header.open .menu-icons .open {
+    display: none;
+  }
+  .header.open .links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    gap: 5rem;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background-color: hsl(229deg 31% 21% / 92%);
+  }
+  .header.open .logo {
+    z-index: 99999;
+  }
+  .header.open svg path {
+    fill: #fff;
+  }
+  .header.open .header-icons {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    position: absolute;
+    bottom: 10%;
+    left: 45%;
+    z-index: 99999;
+  }
+  .header.open .links li a {
+    color: var(--white);
+    text-align: left;
+    font-size: 2rem;
+    border-bottom: 1px solid #707070;
+    padding-bottom: 2rem;
+    display: inline-block;
+    min-width: 40rem;
+    text-align: center;
+    margin: auto;
+  }
+  .header.open .links li a.more-info {
+    background-color: transparent;
+    border: 1px solid var(--white);
+  }
+  .menu-icons .close {
+    display: none;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 50em) {
+  html {
+    font-size: 50%;
+  }
+  .section-hero {
+    justify-content: center;
+  }
+  .hero-desc {
+    font-size: 2rem;
+    max-width: 55rem;
+  }
+  .hero-img,
+  .feature-img img {
+    max-width: 100%;
+  }
+  .grid--3-cols {
+    grid-template-columns: 35rem;
+  }
+  .grid--1-col-accordion {
+    grid-template-columns: 45rem;
+  }
+}
+
+@media (max-width: 43em) {
+  .section-hero::before {
+    width: 37rem;
+    height: 23rem;
+    right: -30%;
+    top: 15%;
+  }
+  .hero-info {
+    margin-top: 5rem;
+  }
+  .section-contact {
+    padding: 4.8rem 0 3.2rem;
+  }
+}
+
+@media (max-width: 38em) {
+  .bookmarking::before,
+  .searching::before,
+  .sharing::before {
+    width: 46rem;
+    height: 24rem;
+  }
+  .hero-title {
+    font-size: 3.2rem;
+  }
+  .features-titles {
+    margin-bottom: 8rem;
+  }
+  .contact h2 {
+    font-size: 3rem;
+  }
+  footer .footer-info,
+  footer .footer-nav,
+  footer ul {
+    flex-direction: column;
+  }
+  footer .icons {
+    display: flex;
+    margin-top: 4.8rem;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 33em) {
+  .bookmarking::before,
+  .searching::before,
+  .sharing::before {
+    width: 37rem;
+    height: 18rem;
+  }
+  .hero-title {
+    font-size: 2.4rem;
+  }
+  .hero-desc {
+    font-size: 1.6rem;
+    max-width: 33rem;
+  }
+  .hero-buttons {
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+  .section-intro .title {
+    font-size: 2.8rem;
+  }
+}

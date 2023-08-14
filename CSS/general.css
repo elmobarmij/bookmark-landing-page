@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --SoftBlue: hsl(231, 69%, 60%);
+  --SoftRed: hsl(0, 94%, 66%);
+  --GrayishBlue: hsl(229, 8%, 60%);
+  --VeryDarkBlue: hsl(229, 31%, 21%);
+  --main-transition: 0.3s ease-in all;
+  --white: #fff;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+body {
+  font-family: "Rubik", sans-serif;
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+}
+a:link,
+a:visited,
+a:hover,
+a:active {
+  outline: none;
+}
+ul,
+summary {
+  list-style: none;
+}
+.container {
+  max-width: 120rem;
+  padding: 4.8rem 6.2rem 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer-container {
+  padding: 3.2rem 6.2rem 3.2rem;
+}
+.header-icons,
+.menu-icons,
+figure:nth-child(4),
+figure:nth-child(5) {
+  display: none;
+}
+/* ======================== */
+/* ==== REUSABLE COMPONENTS ==== */
+/* ======================== */
+.grid--3-cols {
+  display: grid;
+  grid-template-columns: repeat(3, 28rem);
+}
+.grid--2-cols {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid--1-col {
+  display: grid;
+  grid-template-columns: 45rem;
+  justify-content: center;
+  align-items: center;
+}
+.grid--1-col-accordion {
+  grid-template-columns: 55rem;
+}
+.more-info {
+  font-size: 1.4rem;
+  background-color: var(--SoftBlue);
+  color: var(--white);
+  display: inline-block;
+  padding: 1.5rem 2.4rem;
+  border-radius: 6px;
+  box-shadow: 0px 4px 4px 0px #00000017;
+  transition: var(--main-transition);
+}
+.more-info.orange {
+  background-color: var(--SoftRed);
+  transition: var(--main-transition);
+}
+.more-info.orange:hover {
+  color: var(--SoftRed);
+  background-color: #fff;
+  /* border-bottom: 4px solid var(--SoftRed); */
+}
+.more-info.submit {
+  border: none;
+}
+.more-info:hover {
+  color: var(--SoftBlue);
+  background-color: transparent;
+  box-shadow: 0px 4px 4px 0px #00000017, 0px 0px 0 2px currentColor inset;
+}
+.more-info.firefox {
+  color: hsl(0deg 0% 51.02%);
+  background-color: #f7f5f5;
+  font-weight: 500;
+}
+.section-intro .title {
+  font-size: 3.2rem;
+  color: var(--VeryDarkBlue);
+  font-weight: 600;
+  margin-bottom: 2.4rem;
+}
+.section-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 4.8rem;
+}
+.section-intro p {
+  max-width: 48rem;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: var(--GrayishBlue);
+}
+section:not(:last-child) {
+  margin-top: 14rem;
+  margin-bottom: 14rem;
+}
