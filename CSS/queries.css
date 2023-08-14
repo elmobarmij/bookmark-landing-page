@@ -141,7 +141,7 @@
     display: flex;
     gap: 4rem;
     align-items: center;
-    position: absolute;
+    position: fixed;
     bottom: 10%;
     left: 40%;
     z-index: 99999;
